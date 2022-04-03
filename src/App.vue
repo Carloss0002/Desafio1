@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    <Slide/>
+    <Centro/>
+    <Acordeao/>
+    <Formulario/>
+    <footer class="text-center text-white pt-2 pb-2">
+       Lorem ipsum 
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Slide from './components/slider.vue'
+import Centro from './components/centro.vue'
+import Acordeao from './components/accordion.vue'
+import Formulario from './components/formulario.vue' 
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    Header,
+    Slide,
+    Centro,
+    Acordeao,
+    Formulario
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+ #app{
+   overflow-x: hidden;
+ }
+ footer{
+   background: #313131;
+ }
 </style>
